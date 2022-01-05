@@ -1,0 +1,2668 @@
+{
+    "class_id": "com-snaplogic-pipeline",
+    "class_version": 9,
+    "link_map": {
+        "link103": {
+            "dst_id": "11111111-1111-1111-1111-000000000005",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000000d",
+            "src_view_id": "output0"
+        },
+        "link104": {
+            "dst_id": "11111111-1111-1111-1111-000000000007",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000000e",
+            "src_view_id": "output0"
+        },
+        "link110": {
+            "dst_id": "11111111-1111-1111-1111-000000000006",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_view_id": "output0"
+        },
+        "link112": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_view_id": "output0"
+        },
+        "link115": {
+            "dst_id": "11111111-1111-1111-1111-00000000000f",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000009",
+            "src_view_id": "output0"
+        },
+        "link116": {
+            "dst_id": "11111111-1111-1111-1111-000000000000",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000006",
+            "src_view_id": "output0"
+        },
+        "link118": {
+            "dst_id": "11111111-1111-1111-1111-000000000009",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output0"
+        },
+        "link119": {
+            "dst_id": "11111111-1111-1111-1111-000000000011",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000000a",
+            "src_view_id": "output0"
+        },
+        "link121": {
+            "dst_id": "11111111-1111-1111-1111-000000000004",
+            "dst_view_id": "inputLeft",
+            "src_id": "11111111-1111-1111-1111-00000000000f",
+            "src_view_id": "output0"
+        },
+        "link122": {
+            "dst_id": "11111111-1111-1111-1111-000000000008",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000004",
+            "src_view_id": "output0"
+        },
+        "link124": {
+            "dst_id": "11111111-1111-1111-1111-000000000001",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000000b",
+            "src_view_id": "output0"
+        },
+        "link126": {
+            "dst_id": "11111111-1111-1111-1111-00000000000c",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output1"
+        },
+        "link127": {
+            "dst_id": "11111111-1111-1111-1111-000000000004",
+            "dst_view_id": "inputRight",
+            "src_id": "11111111-1111-1111-1111-000000000010",
+            "src_view_id": "output0"
+        },
+        "link128": {
+            "dst_id": "11111111-1111-1111-1111-000000000010",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000000c",
+            "src_view_id": "output0"
+        },
+        "link129": {
+            "dst_id": "11111111-1111-1111-1111-000000000012",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output102"
+        }
+    },
+    "property_map": {
+        "error": {
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "dmeleney@snaplogic.com"
+            },
+            "label": {},
+            "notes": {
+                "value": null
+            },
+            "pipeline_doc_uri": {
+                "value": null
+            },
+            "purpose": {
+                "value": null
+            }
+        },
+        "input": {
+            "11111111-1111-1111-1111-000000000003_inputLeft": {
+                "label": {
+                    "value": "ELT Join - Left side"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            },
+            "11111111-1111-1111-1111-000000000003_inputRight": {
+                "label": {
+                    "value": "ELT Join - Right side"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "output": {
+            "11111111-1111-1111-1111-000000000000_output1": {
+                "label": {
+                    "value": "ELT Copy - output1"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            },
+            "11111111-1111-1111-1111-000000000000_output105": {
+                "label": {
+                    "value": "ELT Copy - output3"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            },
+            "11111111-1111-1111-1111-000000000005_output0": {
+                "label": {
+                    "value": "ELT Transform - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            },
+            "11111111-1111-1111-1111-000000000007_output0": {
+                "label": {
+                    "value": "ELT Transform1 - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            },
+            "11111111-1111-1111-1111-000000000012_output0": {
+                "label": {
+                    "value": "UnitTest Max_CloseDate - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "settings": {
+            "error_param_table": {
+                "value": []
+            },
+            "error_pipeline": {
+                "expression": false,
+                "value": null
+            },
+            "imports": {
+                "value": []
+            },
+            "param_table": {
+                "value": []
+            },
+            "suspendable": {
+                "value": false
+            },
+            "test_pipeline": {
+                "value": false
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000000": {
+                "error": {},
+                "grid_x_int": 7,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {
+                    "output1": {
+                        "dx_int": 0,
+                        "dy_int": 1,
+                        "rot_int": 0
+                    },
+                    "output102": {
+                        "dx_int": 0,
+                        "dy_int": 2,
+                        "rot_int": 0
+                    },
+                    "output105": {
+                        "dx_int": 0,
+                        "dy_int": 3,
+                        "rot_int": 0
+                    }
+                },
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 12,
+                "grid_y_int": 4,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {
+                    "inputRight": {
+                        "dx_int": 0,
+                        "dy_int": 1,
+                        "rot_int": 0
+                    }
+                },
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000004": {
+                "error": {},
+                "grid_x_int": 10,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {
+                    "inputRight": {
+                        "dx_int": 0,
+                        "dy_int": 1,
+                        "rot_int": 0
+                    }
+                },
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000005": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000006": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000007": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000008": {
+                "error": {},
+                "grid_x_int": 11,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000009": {
+                "error": {},
+                "grid_x_int": 8,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-00000000000a": {
+                "error": {},
+                "grid_x_int": 11,
+                "grid_y_int": 3,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-00000000000b": {
+                "error": {},
+                "grid_x_int": 11,
+                "grid_y_int": 4,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-00000000000c": {
+                "error": {},
+                "grid_x_int": 8,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-00000000000d": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-00000000000e": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-00000000000f": {
+                "error": {},
+                "grid_x_int": 9,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000010": {
+                "error": {},
+                "grid_x_int": 9,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000011": {
+                "error": {},
+                "grid_x_int": 12,
+                "grid_y_int": 3,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000012": {
+                "error": {},
+                "grid_x_int": 8,
+                "grid_y_int": 3,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            }
+        },
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000000": {
+            "class_id": "com-snaplogic-snaps-elt-eltcopy",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "ELT Copy"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "output1": {
+                        "label": {
+                            "value": "output1"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "output102": {
+                        "label": {
+                            "value": "output2"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "output105": {
+                        "label": {
+                            "value": "output3"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    }
+                },
+                "view_serial": 105
+            }
+        },
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-elt-eltaggregate",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "30d Forecast"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "aggregateConcatenationFields": {
+                        "value": []
+                    },
+                    "aggregateFields": {
+                        "value": [
+                            {
+                                "aggregateDistinct": {
+                                    "value": false
+                                },
+                                "field": {
+                                    "expression": false,
+                                    "value": null
+                                },
+                                "function": {
+                                    "expression": false,
+                                    "value": null
+                                },
+                                "resultField": {
+                                    "value": null
+                                }
+                            }
+                        ]
+                    },
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "getPreviewData": {
+                        "value": false
+                    },
+                    "groupByFields": {
+                        "value": []
+                    },
+                    "linearRegrAggregateFields": {
+                        "value": []
+                    },
+                    "orderByFields": {
+                        "value": []
+                    },
+                    "percentileDistributionFields": {
+                        "value": []
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-elt-eltfilter",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "ELT Filter"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "filter": {
+                        "expression": false,
+                        "value": "IsWon=True"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
+            "class_id": "com-snaplogic-snaps-elt-eltjoin",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "ELT Join"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "inputLeft": {
+                        "label": {
+                            "value": "Left side"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "inputRight": {
+                        "label": {
+                            "value": "Right side"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "eltJoinCond": {
+                        "expression": false,
+                        "value": "OwnerID=Id"
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "joinLeftSide": {
+                        "value": "inputLeft"
+                    },
+                    "joinRightSide": {
+                        "value": "inputRight"
+                    },
+                    "joinType": {
+                        "value": "Inner"
+                    },
+                    "leftTableAlias": {
+                        "expression": false,
+                        "value": "Opps"
+                    },
+                    "resultantColumnsNamesPrefixType": {
+                        "value": "None"
+                    },
+                    "rightTableAlias": {
+                        "expression": false,
+                        "value": "Users"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000004": {
+            "class_id": "com-snaplogic-snaps-elt-eltjoin",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000004",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "ELT Join1"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "inputLeft": {
+                        "label": {
+                            "value": "Left side"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "inputRight": {
+                        "label": {
+                            "value": "Right side"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "eltJoinCond": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "joinLeftSide": {
+                        "value": "inputLeft"
+                    },
+                    "joinRightSide": {
+                        "value": "inputRight"
+                    },
+                    "joinType": {
+                        "value": "Inner"
+                    },
+                    "leftTableAlias": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "resultantColumnsNamesPrefixType": {
+                        "value": "None"
+                    },
+                    "rightTableAlias": {
+                        "expression": false,
+                        "value": null
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000005": {
+            "class_id": "com-snaplogic-snaps-elt-elttransform",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000005",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "ELT Transform"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "mappingTable": {
+                        "value": [
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "AccountId"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "AccountId"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Amount"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Amount"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "CloseDate"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "CloseDate"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "FiscalQuarter"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "FiscalQuarter"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "FiscalYear"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "FiscalYear"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "StageName"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "StageName"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Type"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Type"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "OwnerId"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "OwnerId"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Probability"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Probability"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "IsWon"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "IsWon"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "IsDeleted"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "IsDeleted"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "IsClosed"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "IsClosed"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "LeadSource"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "LeadSource"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "CreatedDate"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "CreatedDate"
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000006": {
+            "class_id": "com-snaplogic-snaps-elt-elttransform",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000006",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "ELT Transform"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "mappingTable": {
+                        "value": [
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Name"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Name"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Amount"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Amount"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "CAST(CloseDate AS date)"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "CloseDate"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "CompanyName"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "CompanyName"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "FirstName"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "FirstName"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Id"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Id"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "IndividualId"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "IndividualId"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "LastName"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "LastName"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "IsWon"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "IsWon"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "IsDeleted"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "IsDeleted"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "IsClosed"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "IsClosed"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "FiscalYear"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "FiscalYear"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "FiscalQuarter"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "FiscalQuarter"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "OwnerId"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "OwnerId"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Probability"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Probability"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "StageName"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "StageName"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Title"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Title"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Type"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Type"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "UserType"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "UserType"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "CAST(CreatedDate AS timestamp)"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "CreatedDate"
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000007": {
+            "class_id": "com-snaplogic-snaps-elt-elttransform",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000007",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "ELT Transform1"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "mappingTable": {
+                        "value": [
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "UserType"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "UserType"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "UserRoleId"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "UserRoleId"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Title"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Title"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "IndividualId"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "IndividualId"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Id"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Id"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "FirstName"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "FirstName"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "CompanyName"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "CompanyName"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "AccountId"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "AccountId"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Address"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Address"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "City"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "City"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "LastName"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "LastName"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "ManagerId"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "ManagerId"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "Name"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "Name"
+                                }
+                            },
+                            {
+                                "sourceSqlExpression": {
+                                    "expression": false,
+                                    "value": "State"
+                                },
+                                "targetSqlExpression": {
+                                    "value": "State"
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000008": {
+            "class_id": "com-snaplogic-snaps-elt-elttransform",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000008",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "ELT Transform3"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "mappingTable": {
+                        "value": []
+                    },
+                    "passThrough": {
+                        "value": true
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000009": {
+            "class_id": "com-snaplogic-snaps-elt-eltfilter",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000009",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Filter -30d"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "filter": {
+                        "expression": false,
+                        "value": "CloseDate>=DATE_ADD(CURRENT_DATE(), INTERVAL -360 DAY)"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000a": {
+            "class_id": "com-snaplogic-snaps-elt-eltfilter",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000a",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Filter -90d"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "filter": {
+                        "expression": false,
+                        "value": "CloseDate>=DATE_ADD(CURRENT_DATE(), INTERVAL -90 DAY)"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000b": {
+            "class_id": "com-snaplogic-snaps-elt-eltfilter",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000b",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Filter -90d"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "filter": {
+                        "expression": false,
+                        "value": "CloseDate>=DATE_ADD(CURRENT_DATE(), INTERVAL -900 DAY)"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000c": {
+            "class_id": "com-snaplogic-snaps-elt-eltfilter",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000c",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Filter -90d"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "filter": {
+                        "expression": false,
+                        "value": "CreatedDate>=DATE_ADD(CURRENT_DATE(), INTERVAL -420 DAY)"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000d": {
+            "class_id": "com-snaplogic-snaps-elt-eltselect",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000d",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Select Opps"
+                    },
+                    "notes": {}
+                },
+                "input": {},
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "databaseName": {
+                        "expression": false,
+                        "value": "case16370"
+                    },
+                    "enableSqlQuery": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "sudsch"
+                    },
+                    "sqlQuery": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "SF_Opportunities"
+                    },
+                    "viewTableMapping": {
+                        "value": []
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000e": {
+            "class_id": "com-snaplogic-snaps-elt-eltselect",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000e",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Select Users"
+                    },
+                    "notes": {}
+                },
+                "input": {},
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "databaseName": {
+                        "expression": false,
+                        "value": "case16370"
+                    },
+                    "enableSqlQuery": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "sudsch"
+                    },
+                    "sqlQuery": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "SF_Users"
+                    },
+                    "viewTableMapping": {
+                        "value": []
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000f": {
+            "class_id": "com-snaplogic-snaps-elt-eltaggregate",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000f",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Total Opps 30d"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "aggregateConcatenationFields": {
+                        "value": []
+                    },
+                    "aggregateFields": {
+                        "value": [
+                            {
+                                "aggregateDistinct": {
+                                    "value": false
+                                },
+                                "field": {
+                                    "expression": false,
+                                    "value": "Amount"
+                                },
+                                "function": {
+                                    "expression": false,
+                                    "value": "SUM"
+                                },
+                                "resultField": {
+                                    "value": "TotalOppsWon_Amount"
+                                }
+                            },
+                            {
+                                "aggregateDistinct": {
+                                    "value": false
+                                },
+                                "field": {
+                                    "expression": false,
+                                    "value": "Amount"
+                                },
+                                "function": {
+                                    "expression": false,
+                                    "value": "COUNT"
+                                },
+                                "resultField": {
+                                    "value": "TotalOppsWon_Count"
+                                }
+                            }
+                        ]
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "groupByFields": {
+                        "value": [
+                            {
+                                "fieldName": {
+                                    "expression": false,
+                                    "value": "Id"
+                                }
+                            }
+                        ]
+                    },
+                    "linearRegrAggregateFields": {
+                        "value": []
+                    },
+                    "orderByFields": {
+                        "value": []
+                    },
+                    "percentileDistributionFields": {
+                        "value": []
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000010": {
+            "class_id": "com-snaplogic-snaps-elt-eltaggregate",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000010",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Total Opps 90d"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "aggregateConcatenationFields": {
+                        "value": []
+                    },
+                    "aggregateFields": {
+                        "value": [
+                            {
+                                "aggregateDistinct": {
+                                    "value": false
+                                },
+                                "field": {
+                                    "expression": false,
+                                    "value": "Amount"
+                                },
+                                "function": {
+                                    "expression": false,
+                                    "value": "SUM"
+                                },
+                                "resultField": {
+                                    "value": "TotalOppsAssigned_value_90d"
+                                }
+                            },
+                            {
+                                "aggregateDistinct": {
+                                    "value": false
+                                },
+                                "field": {
+                                    "expression": false,
+                                    "value": "Amount"
+                                },
+                                "function": {
+                                    "expression": false,
+                                    "value": "COUNT"
+                                },
+                                "resultField": {
+                                    "value": "TotalOppsAssigned_count_90d"
+                                }
+                            }
+                        ]
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "groupByFields": {
+                        "value": [
+                            {
+                                "fieldName": {
+                                    "expression": false,
+                                    "value": "OwnerId"
+                                }
+                            }
+                        ]
+                    },
+                    "linearRegrAggregateFields": {
+                        "value": []
+                    },
+                    "orderByFields": {
+                        "value": []
+                    },
+                    "percentileDistributionFields": {
+                        "value": []
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000011": {
+            "class_id": "com-snaplogic-snaps-elt-eltaggregate",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000011",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Total Opps 90d"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "aggregateConcatenationFields": {
+                        "value": []
+                    },
+                    "aggregateFields": {
+                        "value": [
+                            {
+                                "aggregateDistinct": {
+                                    "value": false
+                                },
+                                "field": {
+                                    "expression": false,
+                                    "value": "Amount"
+                                },
+                                "function": {
+                                    "expression": false,
+                                    "value": "SUM"
+                                },
+                                "resultField": {
+                                    "value": "TotalOppsWon_Amount_90d"
+                                }
+                            },
+                            {
+                                "aggregateDistinct": {
+                                    "value": false
+                                },
+                                "field": {
+                                    "expression": false,
+                                    "value": "Amount"
+                                },
+                                "function": {
+                                    "expression": false,
+                                    "value": "COUNT"
+                                },
+                                "resultField": {
+                                    "value": "TotalOppsWon_Count_90d"
+                                }
+                            }
+                        ]
+                    },
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "groupByFields": {
+                        "value": [
+                            {
+                                "fieldName": {
+                                    "expression": false,
+                                    "value": "OwnerId"
+                                }
+                            }
+                        ]
+                    },
+                    "linearRegrAggregateFields": {
+                        "value": []
+                    },
+                    "orderByFields": {
+                        "value": []
+                    },
+                    "percentileDistributionFields": {
+                        "value": []
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000012": {
+            "class_id": "com-snaplogic-snaps-elt-eltaggregate",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000012",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "BigQuery_ELT",
+                                "value": "BigQuery_ELT"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-elt-eltdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "UnitTest Max_CloseDate"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "aggregateConcatenationFields": {
+                        "value": []
+                    },
+                    "aggregateFields": {
+                        "value": [
+                            {
+                                "aggregateDistinct": {
+                                    "value": false
+                                },
+                                "field": {
+                                    "expression": false,
+                                    "value": "CloseDate"
+                                },
+                                "function": {
+                                    "expression": false,
+                                    "value": "MAX"
+                                },
+                                "resultField": {
+                                    "value": "max_close_date"
+                                }
+                            }
+                        ]
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "getPreviewData": {
+                        "value": true
+                    },
+                    "groupByFields": {
+                        "value": []
+                    },
+                    "linearRegrAggregateFields": {
+                        "value": []
+                    },
+                    "orderByFields": {
+                        "value": []
+                    },
+                    "percentileDistributionFields": {
+                        "value": []
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    }
+}
